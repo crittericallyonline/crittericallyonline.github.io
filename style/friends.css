@@ -1,0 +1,18 @@
+.friends-list
+{
+    background-color: rgb(211, 211, 211);
+    .friend
+    {
+        background-color: rgb(126, 126, 126);
+
+        color:white;
+
+        .nickname
+        {
+            .censor
+            {
+                background-color: black;
+            }
+        }
+    }
+}

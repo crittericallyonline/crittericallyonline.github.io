@@ -1,0 +1,15 @@
+
+
+@import url("./friends.css");
+
+:root {
+    --background-dark: #333;
+    --foreground-dark: #d8d8d8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    min-width: none;
+    font-family: 'Courier New', Courier, monospace;
+}
