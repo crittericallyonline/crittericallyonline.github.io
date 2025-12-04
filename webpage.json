@@ -3,7 +3,26 @@
         {
             "name": "Nyne",
             "desc": "Very nice person, they are very kind to me and never rude, usually doing okay.",
-            "points": 4
+            "points": 9,
+            "date_added": 1764808624187
+        },
+        {
+            "name": "Manngo & Rattuse",
+            "desc": "POWER COUPLE, stay strong :3",
+            "points": 7,
+            "date_added": 1764808957886
+        },
+        {
+            "name": "Funland Builder",
+            "desc": "Stupid,",
+            "points": 8,
+            "date_added": 1764808962667
+        },
+        {
+            "name": "KOLT[REDACTED]",
+            "desc": "May,, or may not,,, have a crush on this person...",
+            "points": 10,
+            "date_added": 1764809121797
         }
     ]
 }
