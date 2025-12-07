@@ -1,36 +1,100 @@
 * {
     min-width: 0;
-
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform-style: preserve-3d;
 }
 
-body
-{
-    background-color: black;
+:root {
+    --cube-opacity: 0.5;
+    --cube-face-1-color: rgb(255, 0, 0);
+    --cube-face-2-color: rgba(255, 230, 0);
+    --cube-face-3-color: rgb(30, 255, 0);
+    --cube-face-4-color: rgb(0, 255, 255);
+    --cube-face-5-color: rgb(25, 0, 255);
+    --cube-face-6-color: rgb(255, 0, 255);
 }
 
-.container {
-    .elements {
+body {
+    image-rendering: pixelated;
+    background-color: rgb(255, 255, 255);
+    background-image: url("/image/fish.gif");
+    background-size: 100vw 100vh;
+    background-blend-mode: difference;
+    perspective: 6cm;
+    color: rgb(255, 255, 255);
+}
 
 
-        button {
-            width: 100px;
-            height: 100px;
-            border: none;
-            color: transparent;
-            background-color: transparent;
-            background-size:cover;
-            background-position: 50% 0;
-            cursor: pointer;
-        }
+.friends {
+    .friend {
+        width: max-content;
+        padding: 50px;
+        background-position: center center;
+    }
 
-        #youtube
-        {
-            background-image: url("/image/youtube-logo-png-3571-Windows.png");
-        }
+    #funland-builder {
+        color: rgb(0, 0, 0);
+        background-image: url("/image/Slungus_classic.webp");
+        background-size: cover;
+    }
 
-        #twitter {
-            background-image: url("/image/Twitter.png");
-        }
+    #nova-catte {
+        color: rgb(0, 0, 0);
+        background-image: url("/image/image.png");
+        background-size: cover;
+    }
+}
 
+.dimentia-cube {
+    left: 50vw;
+    top: 100px;
+    position: fixed;
+    align-items: center;
+    
+    .wall {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        opacity: var(--cube-opacity);
+    }
+
+
+    .right {
+        background: var(--cube-face-1-color);
+        transform: translate(-50%, -50%) rotateY(90deg) translateZ(50px);
+    }
+    .left {
+        background: var(--cube-face-2-color);
+        transform: translate(-50%, -50%) rotateY(90deg) translateZ(-50px);
+    }
+    .front {
+        background: var(--cube-face-3-color);
+        transform: translate(-50%, -50%) translateZ(-50px);
+    }
+    .back {
+        background: var(--cube-face-4-color);
+        transform: translate(-50%, -50%) translateZ(50px);
+    }
+    .top {
+        background: var(--cube-face-5-color);
+        transform: translate(-50%, -50%) rotateX(90deg) translateZ(-50px);
+    }
+    .bottom {
+        background: var(--cube-face-6-color);
+        transform: translate(-50%, -50%) rotateX(90deg) translateZ(50px);
+    }
+
+    animation: 5s infinite linear rot;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
     }
 }

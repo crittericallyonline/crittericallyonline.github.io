@@ -1,0 +1,5 @@
+#tile {
+    background-image: url("/image/minesweeper/tile.png");
+    width: 200px;
+    height: 200px;
+}
