@@ -8,7 +8,7 @@
 }
 
 :root {
-    --cube-opacity: 0.5;
+    --cube-opacity: 1;
 
     --cube-face-1-color: rgb(255, 0, 0);
     --cube-face-2-color: rgb(255, 230, 0);
@@ -29,39 +29,9 @@ body {
     perspective: 6cm;
     color: rgb(255, 255, 255);
     height: 100vh;
+    overflow: hidden;
 }
-
-
-.friends {
-    .friend {
-        width: max-content;
-        background-position: center center;
-
-        .picture {
-            left: 50%;
-            width: var(--pictureSize);
-            height: var(--pictureSize);
-        }
-    }
-
-    #funland-builder {
-        .picture {
-            color: rgb(0, 0, 0);
-            background-image: url("/image/Slungus_classic.webp");
-            background-size: cover;
-        }
-    }
-
-    #nova-catte {
-        .picture {
-            color: rgb(0, 0, 0);
-            background-image: url("/image/image.png");
-            background-size: cover;
-        }
-    }
-}
-
-.dimentia-cube {
+#dimentia-cube {
     top: 50vh;
     left: 50vw;
     position: fixed;
@@ -71,6 +41,7 @@ body {
         position: fixed;
         width: 100px;
         height: 100px;
+        font-size: 20pt;
         opacity: var(--cube-opacity);
     }
 
@@ -99,20 +70,45 @@ body {
         background: var(--cube-face-6-color);
         transform: translate(-50%, -50%) rotateX(90deg) translateZ(50px);
     }
-
-    animation: 5s infinite linear rot;
 }
 
-@keyframes rot {
-    0% {
-        transform: rotate3d(1, 1, 1, 0deg);
-    }
-    100% {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
-
-.receptors {
-    width: calc(4 * 100px);
+.fish-element {
+    background-color: white;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100px;
     height: 100px;
+    background-blend-mode: difference;
+    background-image: url("/image/fish.gif");
+    background-size: 100% 100%;
+}
+
+
+.friends {
+    .friend {
+        width: max-content;
+        background-position: center center;
+        .picture {
+            left: 50%;
+            width: var(--pictureSize);
+            height: var(--pictureSize);
+        }
+    }
+
+    #funland-builder {
+        .picture {
+            color: rgb(0, 0, 0);
+            background-image: url("/image/Slungus_classic.webp");
+            background-size: cover;
+        }
+    }
+
+    #nova-catte {
+        .picture {
+            color: rgb(0, 0, 0);
+            background-image: url("/image/image.png");
+            background-size: cover;
+        }
+    }
 }
