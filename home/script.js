@@ -76,6 +76,10 @@ function spawnFish(amt)
     }
 }
 
-spawnFish(32)
-
 loop();
+const day = new Date();
+if(day.getMonth() + 1 == 6 && day.getDate() == 17)
+{
+    spawnFish(20)
+    document.getElementById("birthday").hidden = false
+}
