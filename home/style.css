@@ -9,12 +9,15 @@
 
 :root {
     --cube-opacity: 0.5;
+
     --cube-face-1-color: rgb(255, 0, 0);
-    --cube-face-2-color: rgba(255, 230, 0);
+    --cube-face-2-color: rgb(255, 230, 0);
     --cube-face-3-color: rgb(30, 255, 0);
     --cube-face-4-color: rgb(0, 255, 255);
     --cube-face-5-color: rgb(25, 0, 255);
     --cube-face-6-color: rgb(255, 0, 255);
+
+    --pictureSize: 100px;
 }
 
 body {
@@ -25,32 +28,42 @@ body {
     background-blend-mode: difference;
     perspective: 6cm;
     color: rgb(255, 255, 255);
+    height: 100vh;
 }
 
 
 .friends {
     .friend {
         width: max-content;
-        padding: 50px;
         background-position: center center;
+
+        .picture {
+            left: 50%;
+            width: var(--pictureSize);
+            height: var(--pictureSize);
+        }
     }
 
     #funland-builder {
-        color: rgb(0, 0, 0);
-        background-image: url("/image/Slungus_classic.webp");
-        background-size: cover;
+        .picture {
+            color: rgb(0, 0, 0);
+            background-image: url("/image/Slungus_classic.webp");
+            background-size: cover;
+        }
     }
 
     #nova-catte {
-        color: rgb(0, 0, 0);
-        background-image: url("/image/image.png");
-        background-size: cover;
+        .picture {
+            color: rgb(0, 0, 0);
+            background-image: url("/image/image.png");
+            background-size: cover;
+        }
     }
 }
 
 .dimentia-cube {
+    top: 50vh;
     left: 50vw;
-    top: 100px;
     position: fixed;
     align-items: center;
     
@@ -97,4 +110,9 @@ body {
     100% {
         transform: rotate3d(1, 1, 1, 360deg);
     }
+}
+
+.receptors {
+    width: calc(4 * 100px);
+    height: 100px;
 }
