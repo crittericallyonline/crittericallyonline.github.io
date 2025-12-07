@@ -29,8 +29,8 @@ body {
     perspective: 6cm;
     color: rgb(255, 255, 255);
     height: 100vh;
-    overflow: hidden;
 }
+
 #dimentia-cube {
     top: 50vh;
     left: 50vw;
@@ -77,38 +77,9 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     background-blend-mode: difference;
     background-image: url("/image/fish.gif");
     background-size: 100% 100%;
-}
-
-
-.friends {
-    .friend {
-        width: max-content;
-        background-position: center center;
-        .picture {
-            left: 50%;
-            width: var(--pictureSize);
-            height: var(--pictureSize);
-        }
-    }
-
-    #funland-builder {
-        .picture {
-            color: rgb(0, 0, 0);
-            background-image: url("/image/Slungus_classic.webp");
-            background-size: cover;
-        }
-    }
-
-    #nova-catte {
-        .picture {
-            color: rgb(0, 0, 0);
-            background-image: url("/image/image.png");
-            background-size: cover;
-        }
-    }
 }
