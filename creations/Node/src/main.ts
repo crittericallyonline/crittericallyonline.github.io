@@ -1,6 +1,5 @@
 namespace GameObjects {
 
-
     const nodes: Node[] = []
 
     const globalOffset = new Int16Array(2);
