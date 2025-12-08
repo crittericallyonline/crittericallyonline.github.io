@@ -20,7 +20,7 @@ fetch("/data/creations.json")
                         <h2 class="title">${item.title}</h2>
                         <p class="description">${item.description}</p>
                         <date class="date">Last Updated on ${new Date(item.lastUpdated).toLocaleDateString()}</date>
-                        ${item.link.length > 0 ? `<a href="${item.link}">Link</a>` : ``}
+                        ${item.link ? `<a href="${item.link}">Link</a>` : ``}
                     </div>
                 </div>
             </div>

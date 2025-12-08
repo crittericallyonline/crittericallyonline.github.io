@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "outFile": "./script/main.js",
+        "target": "esnext",
+        "removeComments": true,
+        "alwaysStrict": true
+    }
+}

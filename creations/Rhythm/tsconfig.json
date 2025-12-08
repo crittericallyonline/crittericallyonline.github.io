@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es2024",
+        "outDir": "./script",
+        "removeComments": true,
+        "alwaysStrict": true,
+        "noUnusedParameters": true,
+        "moduleSuffixes": ["js"],
+    }
+}
