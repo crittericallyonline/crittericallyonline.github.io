@@ -12,7 +12,7 @@ namespace Settings {
         }
     }
     
-    function write()
+    export function write()
     {
         // move all data into the array before saving to disk.
         // WHEN LOADING PLEASE DO NOT ORDER THIS ANY DIFFERENT.

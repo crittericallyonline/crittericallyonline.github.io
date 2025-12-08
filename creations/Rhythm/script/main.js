@@ -19,6 +19,7 @@ var Settings;
         U8[3] = values.volume.background;
         localStorage.setItem(IDENTITY, String.fromCodePoint(...U8));
     }
+    Settings.write = write;
     function load() {
         const item = localStorage.getItem(IDENTITY);
         if (!item) {
