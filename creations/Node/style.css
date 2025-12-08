@@ -6,8 +6,8 @@
     font-family: 'Courier New', Courier, monospace;
     appearance: none;
     &::-webkit-slider-thumb {
-    appearance: none;
-}
+        appearance: none;
+    }
 }
 
 input[type="range"] {
@@ -23,10 +23,11 @@ input[type="range"]::-webkit-slider-thumb {
 :root {
     --grid-color: cyan;
     --bg-color: rgb(8, 0, 15);
+    --grid-size: 3px;
 }
 
 body {
-    background: linear-gradient(to right, var(--grid-color) 1px, transparent 1px), linear-gradient(to bottom, var(--grid-color) 1px, var(--bg-color) 1px);
+    background: linear-gradient(to right, var(--grid-color) var(--grid-size), transparent 1px), linear-gradient(to bottom, var(--grid-color) var(--grid-size), var(--bg-color) 1px);
     background-size: 100px 100px;
 }
 
@@ -35,13 +36,17 @@ body {
     user-select: none;
     position: fixed;
     color: white;
+    overflow: hidden;
+    border-radius: 5px;
 
     .head {
         background-color: red;
-        height: 20px
+        height: 25px;
+        padding: 5px;
     }
 
     .body {
+        padding: 10px;
         background-color: blue;
     }
 }
@@ -56,4 +61,20 @@ body {
     background-color: rgba(0, 0, 0, 0.459);
     margin: 10px;
     padding: 5px;
+}
+
+.border{
+    pointer-events: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.debug-data {
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
 }
