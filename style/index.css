@@ -1,13 +1,48 @@
-@import url("./friends.css");
-
-:root {
-    --background-dark: #333;
-    --foreground-dark: #d8d8d8;
-}
-
 * {
     padding: 0;
     margin: 0;
     min-width: none;
     font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    --primary-blue: #1D84B5;
+    --secondary-blue: #53A2BE;
+    --shadow-blue: #132E32;
+    --darker-blue: #176087;
+    --dark-blue: #0A2239;
+
+    --razzmataz: #E40066;
+    --piss-yellow: #EAC435;
+
+    --bubblegum-pink: #ef476fff;
+    --golden-pollen: #ffd166ff;
+    --emerald: #06d6a0ff;
+    --ocean-blue: #118ab2ff;
+    --dark-teal: #073b4cff;
+}
+
+body {
+    color: white;
+    background-color: var(--dark-blue);
+    
+    .header-content {
+        background-color: var(--shadow-blue);
+        padding: 10px;
+
+        a {
+            background-color: var(--darker-blue);
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+            &:hover {
+                background: var(--primary-blue);
+            }
+        }
+    }
+}
+
+strong {
+    color: var(--piss-yellow)
 }

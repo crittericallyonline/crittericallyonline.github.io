@@ -1,0 +1,46 @@
+.list {
+
+    padding: 10px;
+    .item
+    {
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.349);
+        padding: 10px;
+
+        transition-property: width, height;
+        transition-duration: 1s;
+        
+        .top {
+            display: flex;
+            .thumb {
+                width: 150px;
+                height: 100px;
+            }
+
+            .body {
+                transition: height 1s;
+                width: 100%;
+                .title {
+                    font-size: calc(24pt * 1.5);
+                }
+
+                .description {
+                    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.541));
+                    height: calc(12pt * 1.5);
+                    overflow: hidden;
+
+                    &:hover {
+                        background-color: linear-gradient(to bottom, transparent, transparent);
+                        height: max-content;
+                    }
+
+                }
+
+                .date {
+                    color:rgba(255, 255, 255, 0.1)
+                }
+
+            }
+        }
+    }
+}
